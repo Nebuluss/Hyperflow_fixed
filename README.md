@@ -59,7 +59,7 @@ The patched node pack was tested against the locally installed ComfyUI with Pyth
 - Both keyword and positional activation arguments, plus the older pre-activated calling path.
 - Existing adapter, injection lifecycle, two-time conditioning, and model-routing tests.
 
-A full video generation with the affected user's checkpoint and workflow has not been run. These results verify the reproduced adapter failure and tested model paths.
+The affected user has tested the patched nodes in their ComfyUI workflow and confirmed that the fix works. The automated tests additionally verify the reproduced adapter failure and tested model paths.
 
 To run the tests with ComfyUI's Python environment, from the ComfyUI directory:
 
