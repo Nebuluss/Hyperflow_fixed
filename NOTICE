@@ -1,0 +1,17 @@
+Hyperflow Fixed for ComfyUI
+
+Based on the ComfyUI-Hyperflow node pack by Drbaph / Saganaki22:
+https://github.com/Saganaki22/ComfyUI-Hyperflow
+
+The original Apache-2.0 license and source attributions are preserved.
+HyperFlow's schedule and conditioning implementation derive from Video Rebirth's
+HyperFlow and the sources credited in README_UPSTREAM.md.
+
+Maintenance changes dated 7 October 2026:
+- hyperflow_h3/apply.py: activate the bypass LoRA input when ComfyUI's Linear
+  receives input_act, fixing H3's fused SwiGLU dimension mismatch.
+- tests/test_fused_activation.py: add CPU/CUDA regression coverage.
+- tests/test_regressions.py: use ComfyUI operations in the model fixture.
+- README.md and project repository metadata: document this maintenance copy.
+
+No model weights are included. Their separate model licenses remain applicable.
